@@ -1,0 +1,14 @@
+@import '../../scss/variables.scss';
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-column-gap: 15px;
+    background-color: $headerBg;
+    padding: 15px;
+    color: white;
+
+    div:last-child {
+        text-align: right;
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../../scss/variables.scss';
+
+.popup {
+    position: absolute;
+    width: 700px;
+    transform: translate(-50%, -50%);
+    left: 50%; top: 50%;
+    background-color: $popupBg;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.popup-close {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 5px; right: 10px;
+    cursor: pointer;
+}

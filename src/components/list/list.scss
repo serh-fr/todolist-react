@@ -1,0 +1,59 @@
+@import '../../scss/variables.scss';
+
+.list {
+    position: relative;
+    height: 100%;
+    background-color: $listBg;
+}
+
+.list-nav {
+
+    > button {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+.list-filter {
+    text-align: center;
+    padding: 20px;
+
+    select {
+        width: 100%;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
+
+.list-item {
+    padding: 5px 15px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &.clean {
+        background-color: $listCleanBg;
+    }
+
+    &.uncompleted {
+        background-color: $listUncomplatedBg;
+    }
+
+    &.completed {
+        background-color: $listCompletedBg;
+    }
+
+    div {
+        flex: 0 0 auto;
+    }
+
+    button {
+        margin-left: 5px;
+    }
+}

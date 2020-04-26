@@ -1,0 +1,83 @@
+@import './variables.scss';
+
+input[type=text],
+input[type=password] {
+    border-radius: 5px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 0 10px;
+    font-family: inherit;
+    outline: none;
+}
+
+button {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+
+    &.button__add,
+    &.button__edit,
+    &.button__yes {
+        background-color: $buttonSuccess;
+    }
+
+    &.button__delete,
+    &.button__no {
+        background-color: $buttonError;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-error {
+    color: red;
+    margin-top: 20px;
+}
+
+.form-popup {
+    text-align: center;
+
+    button {
+        margin-top: 20px;
+    }
+}
+
+.form-title {
+    font-size: 1.3rem;
+}
+
+.form-item {
+    margin-top: 15px;
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+
+    span {
+        margin-right: 10px;
+    }
+}
+
+.field-error {
+    color: red;
+}
+
+.modal-confirmation {
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin: 0 15px;
+    }
+}
