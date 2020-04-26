@@ -8,11 +8,13 @@ const ListItem = ({item, setVisibleModal, setListEditInitial, setTypePopup, setI
     const {name, status, id} = item
 
     const handleDeleteList = () => {
+        debugger
         setItem(item)
         setVisibleModal(true, 'deleteModal')
     }
 
     const handleEditList = () => {
+        debugger
         setListEditInitial(item)
         setVisibleModal(true, 'editModal')
         setTypePopup('edit')

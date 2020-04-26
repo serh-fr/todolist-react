@@ -9,5 +9,7 @@ const LoginContainer = props => {
 }
 
 export default compose(
-    connect(null, { login })
+    connect(state => ({
+        isAuth: state.auth.isAuth
+    }), { login })
 )(LoginContainer)

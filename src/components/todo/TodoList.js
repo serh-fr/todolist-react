@@ -113,7 +113,7 @@ const TodoList = ({list, modalVisible, setVisibleModal,
         </PopupContainer>}
 
         {modalVisible && (nameModal === 'modalTodo') &&
-        <Modal>
+        <Modal setVisibleModal={setVisibleModal}>
            {modalText}     
         </Modal>}
     </>

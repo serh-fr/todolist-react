@@ -11,6 +11,7 @@ const Modal = props => {
 
         setTimeout(() => {
             wrapper.removeChild(el) 
+            props.setVisibleModal(false)
         }, 3000)
     })
 

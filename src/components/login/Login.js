@@ -2,11 +2,13 @@ import React from 'react'
 import './login.scss'
 import LoginForm from './LoginForm'
 
-const Login = ({login}) => {
+const Login = ({login, isAuth}) => {
 
     const handleSubmit = (formData) => {
         login(formData)
     }
+
+    if(isAuth) return null
 
     return <div className={'login'}>
         <div className={'login-title'}>

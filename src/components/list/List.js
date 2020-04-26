@@ -96,7 +96,7 @@ const List = ({list, modalVisible, modalName,
         </PopupContainer>}
 
         {modalVisible && (modalName === 'modalList') &&
-        <Modal>
+        <Modal setVisibleModal={setVisibleModal}>
             {modalText}    
         </Modal>}
     </div>
